@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+ <head>
+
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ 
+ <link rel="stylesheet" href="https://unpkg.com/@coreui/coreui@3.0.0-rc.0/dist/css/coreui.min.css" crossorigin="anonymous">
+
+ <title>CoreUI</title>
+ </head>
+ <body class="c-app">
+ 
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js" integrity="sha384-L2pyEeut/H3mtgCBaUNw7KWzp5n9&#43;4pDQiExs933/5QfaTh8YStYFFkOzSoXjlTb" crossorigin="anonymous"></script>
+ <script src="https://unpkg.com/@coreui/coreui@3.0.0-rc.0/dist/js/coreui.min.js"></script>
+
+
+ <form #userlogin = "ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)">
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-5">
+      <input type="email" class="form-control" id="inputEmail3" name="email" placeholder = "email" ngModel>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-5">
+      <input type="password" class="form-control" id="inputPassword3" name="password" placeholder = "password" ngModel>
+    </div>
+  </div>
+
+  <label>ID Token :</label>
+  <br/>
+  <label name="idtoken" value="idtoken" ngModel>{{token}}</label>
+  
+  <div class="form-group row">
+    <div class="col-sm-10">
+      <button type="submit" class="btn btn-primary" value = "submit">Login</button>
+    </div>
+  </div>
+
+
+  <!-- <div class="form-group row">
+    <label for="staticEmail" class="col-sm-2 col-form-label">Firebase ID Token</label>
+    <div class="col-sm-10">
+      <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+    </div>
+  </div> -->
+</form>
+ </body>
+</html>
+
+ 
+  <!-- <input type = "text" > 
+  <br/> 
+  <input type = "password" > 
+  <br/> 
+
+  <br/>
+  <input type = "submit" > 
+</form> -->
